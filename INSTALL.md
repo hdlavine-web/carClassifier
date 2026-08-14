@@ -38,4 +38,4 @@ streamlit run app_streamlit.py
 
 Notes:
 - `timm` will download pretrained weights when `pretrained=True` on first model creation; allow network access or set `pretrained=False`.
-- If you want me to detect your CUDA version and give the exact command, tell me whether you want me to run a GPU probe on this machine.
+
