@@ -29,13 +29,13 @@ class carClassifier(nn.Module):
 
 class toSquare(object):
     def __call__(self, image):
-        w,h = image.size
+        w,h = image.size 
         maxwh = max(w,h)
-        pad_left = (maxwh - w) // 2
+        pad_left = (maxwh - w) // 2  #half the size of the biggest size - the smallest creating 2pads per side
         pad_top = (maxwh - h) // 2
         pad_right = maxwh - w - pad_left
         pad_bottom = maxwh - h - pad_top    
-        padding = (pad_left, pad_top, pad_right, pad_bottom)
+        padding = (pad_left, pad_top, pad_right, pad_bottom) #padding obj
         return F.pad(image, padding, fill=0, padding_mode='constant')
 
 transform = transforms.Compose([

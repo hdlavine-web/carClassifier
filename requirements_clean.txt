@@ -1,0 +1,11 @@
+
+# Install with: pip install -r requirements_clean.txt
+
+torch
+torchvision
+timm
+streamlit
+Pillow
+matplotlib
+pandas
+numpy
